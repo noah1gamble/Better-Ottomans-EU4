@@ -184,7 +184,7 @@ country_decisions = {
 			set_country_flag = ottoman_empire_embraced
 			add_mil_power = -100
 			set_government_rank = 3
-			override_country_name = OTTOMAN_EMPIRE
+			override_country_name = OTTOMAN_EMPIRE # noah is cool
 		}
 		ai_will_do = {
 			factor = 1
