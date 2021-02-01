@@ -1,0 +1,7 @@
+﻿l_english:
+  # Country Name
+ OTTOMAN_EMPIRE: "Ottoman Empire"
+ OTTOMAN_EMPIRE_ADJ: "Ottoman"
+  # Decisions
+ embrace_the_ottoman_empire_title: "The Ottoman Empire"
+ embrace_the_ottoman_empire_desc: "The Ottoman State has become too large to call itself a mere kingdom.. We are the Ottoman Empire!"
