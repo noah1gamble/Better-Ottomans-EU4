@@ -13,6 +13,7 @@ country_event = {
 	trigger = {
 		tag = TUR # Only fires for Turkey
 		MAM = {
+			war_with = TUR
 			NOT = {
 				manpower_percentage = 0.10 # Less than 10% Manpower
 				stability = 0 # Less than 0 Stability
@@ -151,6 +152,10 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 10 # 10% CHANCE, to be reworked
+			modifier = {
+				factor = 6
+				NOT = { diplomatic_reputation = 1 } # Low diplomacy ottomans reduced chance of such annexation
+			}
 		}
 	}
 
@@ -192,6 +197,10 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 5 # 5% CHANCE, to be reworked
+			modifier = {
+				factor = 2
+				NOT = { diplomatic_reputation = 1 } # Low diplomacy ottomans reduced chance of such annexation
+			}
 		}
 	}
 }
