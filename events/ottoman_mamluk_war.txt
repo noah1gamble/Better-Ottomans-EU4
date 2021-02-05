@@ -1,0 +1,200 @@
+namespace = flavor_ottoman_mamluks
+normal_or_historical_nations = yes
+
+# Capture of Sultan
+country_event = {
+	id = flavor_ottoman_mamluks.1
+	title = "flavor_ottoman_mamluks.EVTNAME1"
+	desc = "flavor_ottoman_mamluks.EVTDESC1"
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes # Can only happen once!
+
+	trigger = {
+		tag = TUR # Only fires for Turkey
+		MAM = {
+			NOT = {
+				manpower_percentage = 0.10 # Less than 10% Manpower
+				stability = 0 # Less than 0 Stability
+			}
+			any_owned_province = {
+				AND = {
+					unit_in_battle = yes
+					has_ruler_leader_from = MAM
+				}
+			}
+		}
+	}
+
+	# TODO: Annex Syria and the Levant
+
+	# continue war (AI - 55%)
+	option = {
+		name = "flavor_ottoman_mamluks.EVTOPTA6"
+		MAM = {
+			random_list = {
+				80 = { # war continues
+					add_war_exhaustion = 2
+					TUR = {
+						add_prestige = 10
+						add_war_exhaustion = -2
+					}
+				}
+				15 = { # revolt (caliph dies in captivity)
+					kill_ruler = yes
+					add_legitimacy = -50
+					add_stability = -2
+					random_owned_province = {
+						spawn_rebels = {
+							type = pretender_rebels
+							size = 3
+						}
+					}
+				}
+				5 = { # breakaway
+					add_stability = -1
+					add_prestige = -10
+					custom_tooltip = flavor_ottoman_mamluks_rebellion_caused_by_war_tt
+					hidden_effect = {
+						every_owned_province = {
+							spawn_rebels = {
+								type = pretender_rebels
+								size = 0.5
+							}
+						}
+					}
+					every_subject_country = {
+						grant_independence = yes
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 55 # 55% CHANCE, to be reworked
+		}
+	}
+
+	# secure vassals (AI - 30%)
+	option = {
+		name = "flavor_ottoman_mamluks.EVTOPTA1"
+		highlight = yes
+		trigger = {
+			OR = {
+				FAD = { is_subject_of = MAM }
+				ANZ = { is_subject_of = MAM }
+				MDA = { is_subject_of = MAM }
+				HED = { is_subject_of = MAM }
+				CYP = { is_subject_of = MAM }
+			}
+		}
+		add_prestige = 30
+		add_country_modifier = { # Osman Diplomatic Genius
+			name = flavor_ottoman_mamluks_diplomatic_genius
+			duration = 730
+		}
+		FAD = { # Fadl
+			if = {
+				limit = {
+					is_subject_of = MAM
+				}
+				TUR = { vassalize = FAD }
+			}
+		}
+		ANZ = { # Anizah
+			if = {
+				limit = {
+					is_subject_of = MAM
+				}
+				TUR = { vassalize = ANZ }
+			}
+		}
+		MDA = { # Medina
+			if = {
+				limit = {
+					is_subject_of = MAM
+				}
+				TUR = { vassalize = MDA }
+			}
+		}
+		HED = { # Hedjaz
+			if = {
+				limit = {
+					is_subject_of = MAM
+				}
+				TUR = { vassalize = HED }
+			}
+		}
+		CYP = { # Cyprus
+			if = {
+				limit = {
+					is_subject_of = MAM
+				}
+				TUR = { vassalize = CYP }
+			}
+		}
+		ai_chance = { 
+			factor = 30 # 30% CHANCE, to be reworked 
+		}
+	}
+
+	# union with mamluks (AI - 10%)
+	option = {
+		name = "flavor_ottoman_mamluks.EVTOPTA3"
+		create_union = MAM
+		remove_historical_rival = MAM
+		add_historical_friend = MAM
+		create_marriage = MAM
+		add_prestige = 20
+		MAM = {
+			add_liberty_desire = -100
+			remove_historical_rival = TUR
+			add_historical_friend = TUR
+		}
+		ai_chance = {
+			factor = 10 # 10% CHANCE, to be reworked
+		}
+	}
+
+	# annex everything (AI - 5%)
+	option = {
+		name = "flavor_ottoman_mamluks.EVTOPTA5"
+		highlight = yes
+		trigger = {
+			OR = {
+				ruler_has_personality = conqueror_personality # Conquerers always have this choice!
+				AND = { # Can fire without being a conqueror if you have a stable country
+					stability = 3
+					prestige = 95
+				}
+				OR = { # Historical Rulers capable of such action!
+					AND = {
+						has_ruler = "Mehmed II Fatih" # Starts as a conquerer
+						dynasty = "Osmanoglu"
+					}
+					AND = {
+						has_ruler = "Selim I Yavuz" # Historical Conquerer
+						dynasty = "Osmanoglu"
+					}
+				}
+			}
+		}
+		custom_tooltip = flavor_ottoman_mamluks_conquest_of_all_provinces_tt
+		hidden_effect = {
+			MAM = {
+				every_owned_province = {
+					cede_province = TUR
+				}
+			}
+		}
+		add_country_modifier = {
+			name = flavor_ottoman_mamluks_ae
+			desc = flavor_ottoman_mamluks_ae_desc
+			duration = 730
+		}
+		ai_chance = {
+			factor = 5 # 5% CHANCE, to be reworked
+		}
+	}
+}
+
+ # remember.. no kebab

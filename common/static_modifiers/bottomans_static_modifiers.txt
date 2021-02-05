@@ -1,0 +1,10 @@
+
+	# Static Modifiers for the Ottofucks
+
+	flavor_ottoman_mamluks_ae = {
+		ae_impact = 0.2
+	}
+
+	flavor_ottoman_mamluks_diplomatic_genius = {
+		diplomatic_reputation = 2
+	}

@@ -7,3 +7,29 @@
  embrace_the_ottoman_empire_desc: "The Ottoman State has become too large to call itself a mere sultanate.. We are the Ottoman Empire!"
   # Fixing Paradox Mistakes
  relocated_capital_constantinople_tt: "Relocated Capital to Constantinople"
+  # Imperial Incididents
+ incident_ottomans_in_italy: "Turkish Invaders in Italy"
+ incident_ottomans_in_italy_desc: "I don't think this is needed!"
+ incident_ottomans_in_italy_member_alert: "Hi, I'm hidden content for HRE Member"
+ incident_ottomans_in_italy_emperor_alert: "Hi, I'm hidden content for Emperor"
+ incident_ottomans_in_vienna: "Fall of Wien"
+ incident_ottomans_in_vienna_desc: "I don't think this is needed!"
+ incident_ottomans_in_vienna_member_alert: "Hi, I'm hidden content for HRE Member"
+ incident_ottomans_in_vienna_emperor_alert: "Hi, I'm hidden content for Emperor"
+  # Ottoman-Mamluk War
+ flavor_ottoman_mamluks.EVTNAME1: "The Capture of [MAM.Monarch.GetTitle] [MAM.Monarch.GetName]"
+ flavor_ottoman_mamluks.EVTDESC1: "During the recent major battle [MAM.Monarch.GetTitle] [MAM.Monarch.GetName] was foolish enough to lead himself into capture.\n\nWith this turn of events the result of the war now lay in our hands we can choose to end this bloodshed now reaping much rewards or continue the war.The overall reaction to possible continuation of the war is unlikely to be positive if we so willingly allow many more to die..\n\n In the end, only Allah decides who lives and dies. war is life.. Should it continue so be it!"
+ flavor_ottoman_mamluks.EVTOPTA1: "Secure [MAM.GetName] vassals."
+ flavor_ottoman_mamluks.EVTOPTA2: "We must take what we can!"
+ flavor_ottoman_mamluks.EVTOPTA3: "Place an Osman on the Egyptian throne."
+ flavor_ottoman_mamluks.EVTOPTA4: "Divide new borders based on culture."
+ flavor_ottoman_mamluks.EVTOPTA5: "It all belongs to the Turks!"
+ flavor_ottoman_mamluks.EVTOPTA6: "The war rages on.."
+  # Static Modifiers
+ flavor_ottoman_mamluks_ae: "The Annexation of Mamluks"
+ flavor_ottoman_mamluks_ae_desc: "The realm has grown far too large due to the annexation of §YMamluks§!"
+ flavor_ottoman_mamluks_diplomatic_genius: "Osman Diplomatic Genius"
+ flavor_ottoman_mamluks_diplomatic_genius_desc: ""
+  # Custom Tooltips
+ flavor_ottoman_mamluks_conquest_of_all_provinces_tt: "Cede §Yall provinces§! to §YOttomans§!."
+ flavor_ottoman_mamluks_rebellion_caused_by_war_tt: "§RA massive rebellion will break out across Egypt§!"

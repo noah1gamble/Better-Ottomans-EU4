@@ -170,13 +170,20 @@ country_decisions = {
 			NOT = { has_country_modifier = the_devshirme_system }
 			NOT = { has_country_flag = lapse_of_devshirme }
 		}
+		provinces_to_highlight = {
+			province_id = 151
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			custom_trigger_tooltip = {
 				tooltip = relocated_capital_constantinople_tt
 				hidden_trigger = {
 					has_country_flag = relocated_capital_constantinople
 				}
-			}			
+			}
 			mil_power = 100
 			NOT = { government_rank = 3 }
 		}
