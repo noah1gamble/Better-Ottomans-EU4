@@ -18,7 +18,7 @@
  incident_ottomans_in_vienna_emperor_alert: "Hi, I'm hidden content for Emperor"
   # Ottoman-Mamluk War
  flavor_ottoman_mamluks.EVTNAME1: "The Capture of [MAM.Monarch.GetTitle] [MAM.Monarch.GetName]"
- flavor_ottoman_mamluks.EVTDESC1: "During the recent major battle [MAM.Monarch.GetTitle] [MAM.Monarch.GetName] was foolish enough to lead himself into capture.\n\nWith this turn of events the result of the war now lay in our hands we can choose to end this bloodshed now reaping much rewards or continue the war.The overall reaction to possible continuation of the war is unlikely to be positive if we so willingly allow many more to die..\n\n In the end, only Allah decides who lives and dies. war is life.. Should it continue so be it!"
+ flavor_ottoman_mamluks.EVTDESC1: "During the recent major battle [MAM.Monarch.GetTitle] [MAM.Monarch.GetName] was foolish enough to lead himself into capture.\n\nWith this turn of events the result of the war now lay in our hands we can choose to end this bloodshed now reaping much rewards or continue the war. The overall reaction to possible continuation of the war is unlikely to be positive if we so willingly allow many more to die..\n\n In the end, only Allah decides who lives and dies. war is life.. Should it continue so be it!"
  flavor_ottoman_mamluks.EVTOPTA1: "Secure [MAM.GetName] vassals."
  flavor_ottoman_mamluks.EVTOPTA2: "We must take what we can!"
  flavor_ottoman_mamluks.EVTOPTA3: "Place an Osman on the Egyptian throne."

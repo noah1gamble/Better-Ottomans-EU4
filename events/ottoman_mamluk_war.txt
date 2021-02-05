@@ -77,7 +77,6 @@ country_event = {
 	# secure vassals (AI - 30%)
 	option = {
 		name = "flavor_ottoman_mamluks.EVTOPTA1"
-		highlight = yes
 		trigger = {
 			OR = {
 				FAD = { is_subject_of = MAM }
