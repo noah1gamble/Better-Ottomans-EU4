@@ -1,0 +1,29 @@
+
+#absolute_rule_vs_constitutional
+
+young_ottomans_reform = {
+	icon = "constitution"
+	allow_normal_conversion = no
+
+	potential = {
+	}
+
+	modifiers = {
+	}
+
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		has_parliament = yes
+	}
+
+	custom_attributes = {
+	}
+
+	ai = {
+		factor = 1.5
+		modifier = {
+			factor = 2
+			tag = TUR
+		}
+	}
+}

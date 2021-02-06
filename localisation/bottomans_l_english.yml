@@ -33,3 +33,10 @@
   # Custom Tooltips
  flavor_ottoman_mamluks_conquest_of_all_provinces_tt: "Cede §Yall provinces§! to §YOttomans§!."
  flavor_ottoman_mamluks_rebellion_caused_by_war_tt: "§RA massive rebellion will break out across Egypt§!"
+  # Governments
+ ottoman_monarchy: "Ottoman Monarchy"
+ ottoman_monarchy_name: "Ottoman Monarchy"
+ ottoman_monarchy_desc: "A monarchy is a form of government where a sole monarch is the head of the state. A monarch rules for life and the title is often hereditary within their dynasty."
+  # Government Reforms
+ young_ottomans_reform: "Young Ottomans Constitution"
+ young_ottomans_reform_desc: "The Constitution demanded by the Young Ottomans allowed for democractic policies in the Ottoman Empire."
