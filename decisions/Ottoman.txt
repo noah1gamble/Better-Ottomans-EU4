@@ -167,8 +167,8 @@ country_decisions = {
 		potential = {
 			has_reform = ottoman_government
 			NOT = { has_disaster = janissary_decadence }
-			NOT = { has_country_modifier = the_devshirme_system }
-			NOT = { has_country_flag = lapse_of_devshirme }
+			# NOT = { has_country_modifier = the_devshirme_system }
+			# NOT = { has_country_flag = lapse_of_devshirme }
 		}
 		provinces_to_highlight = {
 			province_id = 151
@@ -195,10 +195,10 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = { # Ottos wont waste mil mana on empire title (400-100=300)
+			modifier = { # Ottos wont waste mil mana on empire title
 				factor = 0
 				NOT = {
-					mil_power > 400
+					mil_power = 300
 				}
 			}
 			modifier = {
